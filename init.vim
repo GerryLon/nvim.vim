@@ -15,13 +15,15 @@ set clipboard=unnamed
 set nocursorcolumn              " Do not highlight column (speeds up highlighting)
 " set nocursorline
 set cursorline
+" hi CursorLine term=bold ctermbg=yellow cterm=bold guibg=Grey40
+" hi CursorLine ctermbg=yellow guibg=Grey40
 set backspace=2
 set ignorecase
 set smartcase
 set wildmenu
 set fixeol
 " set showcmd
-set relativenumber
+" set relativenumber
 " 超过120提示
 set colorcolumn=120
 set expandtab
@@ -96,10 +98,9 @@ set t_Co=256
 let g:rehash256 = 1
 let g:molokai_original = 1
 let g:solarized_termcolors=256
-" set background=dark
-" colorscheme solarized
-
+ " set background=dark
 set background=light
+" colorscheme solarized
 colorscheme PaperColor
 " colorscheme molokai
 
@@ -225,4 +226,10 @@ source $HOME/.config/nvim/vim-markdown-preview.vim
 source $HOME/.config/nvim/python.vim
 
 nnoremap <C-b> :!make build<CR><Esc>
+
+" windows size control
+nnoremap  <leader>5> <C-w>5>
+nnoremap  <leader>5< <C-w>5<
+nnoremap  <leader>5+ <C-w>5+
+nnoremap  <leader>5- <C-w>5-
 
