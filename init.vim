@@ -56,7 +56,8 @@ Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 Plug 'majutsushi/tagbar'
 Plug 'easymotion/vim-easymotion'
@@ -77,6 +78,8 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'buoto/gotests-vim'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'ybian/smartim'
+Plug 'github/copilot.vim'
 call plug#end()
 
 " Enable to copy to clipboard for operations like yank, delete, change and put
@@ -151,9 +154,10 @@ inoremap <C-f> :Files<CR>
 map <leader>fzb :Buffers<CR>
 let g:fzf_action = { 'ctrl-e': 'edit' }
 " 用 leader+ag 搜索当前 cursor 下单词 see: https://github.com/junegunn/fzf.vim/issues/50
-nnoremap <silent> <Leader>ag :Ag <C-R><C-W><CR>
-noremap <C-a> :Ag<CR>
- " noremap <leader>a :Ag<CR>
+" nnoremap <silent> <Leader>ag :Ag <C-R><C-W><CR>
+nnoremap <silent> <leader>ag :Ag <CR>
+" noremap <C-a> :Ag<CR>
+" noremap <leader>a :Ag<CR>
 
 nnoremap <leader>v :NERDTreeFind<cr>
 nnoremap <leader>g :NERDTreeToggle<cr>
@@ -225,11 +229,14 @@ source $HOME/.config/nvim/vim-airline.vim
 source $HOME/.config/nvim/vim-markdown-preview.vim
 source $HOME/.config/nvim/python.vim
 
-nnoremap <C-b> :!make build<CR><Esc>
-
 " windows size control
 nnoremap  <leader>5> <C-w>5>
 nnoremap  <leader>5< <C-w>5<
 nnoremap  <leader>5+ <C-w>5+
 nnoremap  <leader>5- <C-w>5-
 
+
+" go debug
+nnoremap gds :GoDebugStep<CR>
+nnoremap gdn :GoDebugNext<CR>
+nnoremap gdb :GoDebugBreakpoint<CR>
