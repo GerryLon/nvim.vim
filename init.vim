@@ -75,11 +75,11 @@ Plug 'zivyangll/git-blame.vim'
 Plug 'mg979/vim-visual-multi'
 " Plug 'gcmt/wildfire.vim'
 Plug 'altercation/vim-colors-solarized'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
+" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'buoto/gotests-vim'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'ybian/smartim'
-Plug 'github/copilot.vim'
+" Plug 'ybian/smartim'
+" Plug 'github/copilot.vim'
 call plug#end()
 
 " Enable to copy to clipboard for operations like yank, delete, change and put
