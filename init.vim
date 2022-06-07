@@ -240,3 +240,11 @@ nnoremap  <leader>5- <C-w>5-
 nnoremap gds :GoDebugStep<CR>
 nnoremap gdn :GoDebugNext<CR>
 nnoremap gdb :GoDebugBreakpoint<CR>
+
+" for c/cpp
+let g:ale_linters = {
+\   'cpp': ['g++'],
+\   'c': ['gcc'],
+\   'python': ['pylint'],
+\   'go': ['golint'],
+\}
