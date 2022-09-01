@@ -2,6 +2,7 @@
   "languageserver": {
     "golang": {
       "command": "gopls",
+      "trace.server": "verbose",
       "rootPatterns": [
         "go.mod"
       ],
@@ -9,12 +10,27 @@
         "go"
       ],
       "initializationOptions": {
-        "usePlaceholders": false
+        "usePlaceholders": false,
+        "gocodeCompletionEnabled": true,
+        "diagnosticsEnabled": true,
+        "lintTool": "golint"
       }
+    },
+    "rust": {
+      "command": "rust-analyzer",
+      "filetypes": [
+        "rust"
+      ],
+      "rootPatterns": [
+        "Cargo.toml"
+      ]
     }
   },
   "suggest.noselect": false,
   "suggest.floatEnable": true,
+  "suggest.floatConfig": {
+    "close": true
+  },
   "codeLens.enable": true,
   "coc.preferences.extensionUpdateCheck": "daily",
   "coc.preferences.formatOnType": true,

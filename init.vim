@@ -15,6 +15,7 @@ set clipboard=unnamed
 set nocursorcolumn              " Do not highlight column (speeds up highlighting)
 " set nocursorline
 set cursorline
+" set cursorcolumn
 " hi CursorLine term=bold ctermbg=yellow cterm=bold guibg=Grey40
 " hi CursorLine ctermbg=yellow guibg=Grey40
 set backspace=2
@@ -56,8 +57,8 @@ Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-startify'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dense-analysis/ale'
 Plug 'majutsushi/tagbar'
 Plug 'easymotion/vim-easymotion'
@@ -248,3 +249,15 @@ let g:ale_linters = {
 \   'python': ['pylint'],
 \   'go': ['golint'],
 \}
+
+" 提示框出来时, 按enter不生效修复
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+
+" 查询颜色: :h cterm-colors
+highlight CocFloating ctermbg=Yellow
+
+" 参考: https://zhuanlan.zhihu.com/p/513990561
+hi Pmenu ctermfg=Black ctermbg=LightYellow
+hi PmenuSel ctermfg=Red ctermbg=Green
+hi CocFloating ctermfg=Blue ctermbg=Yellow
+
