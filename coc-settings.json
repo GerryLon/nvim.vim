@@ -59,5 +59,6 @@
   "suggest.defaultSortMethod": "none",
   "suggest.enablePreselect": true,
   "python.jediEnabled": false,
-  "python.pythonPath": "python3"
+  "python.pythonPath": "python3",
+  "pyright.enable": true
 }

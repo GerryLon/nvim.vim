@@ -165,7 +165,7 @@ nnoremap <leader>g :NERDTreeToggle<cr>
 " nnoremap <C-f> :NERDTreeFind<CR>
 
 nnoremap <leader>t :TagbarToggle<cr>
-nmap ss <Plug>(easymotion-s2)
+" nmap ss <Plug>(easymotion-s2)
 nmap mm <Plug>(easymotion-s2)
 
 " 定义floaterm快捷键
