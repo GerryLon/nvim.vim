@@ -73,9 +73,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'voldikss/vim-floaterm'
 Plug 'airblade/vim-gitgutter'
 Plug 'zivyangll/git-blame.vim'
-Plug 'mg979/vim-visual-multi'
+" Plug 'mg979/vim-visual-multi'
 " Plug 'gcmt/wildfire.vim'
-Plug 'altercation/vim-colors-solarized'
+" Plug 'altercation/vim-colors-solarized'
 " Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'buoto/gotests-vim'
 Plug 'NLKNguyen/papercolor-theme'
@@ -254,10 +254,9 @@ let g:ale_linters = {
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 " 查询颜色: :h cterm-colors
-highlight CocFloating ctermbg=Yellow
+highlight CocFloating ctermbg=LightGray ctermfg=Yellow
 
 " 参考: https://zhuanlan.zhihu.com/p/513990561
-hi Pmenu ctermfg=Black ctermbg=LightYellow
-hi PmenuSel ctermfg=Red ctermbg=Green
-hi CocFloating ctermfg=Blue ctermbg=Yellow
-
+" hi Pmenu ctermfg=Black ctermbg=DarkGray
+" hi PmenuSel ctermfg=Red ctermbg=Green
+" hi CocFloating ctermfg=Blue ctermbg=Yellow
