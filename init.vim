@@ -64,7 +64,7 @@ Plug 'majutsushi/tagbar'
 Plug 'easymotion/vim-easymotion'
 Plug '/usr/local/opt/fzf'
 Plug 'jiangmiao/auto-pairs'
-" Plug 'junegunn/gv.vim'
+Plug 'junegunn/gv.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -254,9 +254,12 @@ let g:ale_linters = {
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 " 查询颜色: :h cterm-colors
-highlight CocFloating ctermbg=LightGray ctermfg=Yellow
+highlight CocFloating ctermbg=LightYellow ctermfg=DarkGreen
 
 " 参考: https://zhuanlan.zhihu.com/p/513990561
 " hi Pmenu ctermfg=Black ctermbg=DarkGray
 " hi PmenuSel ctermfg=Red ctermbg=Green
 " hi CocFloating ctermfg=Blue ctermbg=Yellow
+"
+
+lua require('core')
