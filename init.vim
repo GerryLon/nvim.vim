@@ -6,7 +6,7 @@ lua require('core')
 " set langmenu=zh_CN.UTF-8
 "防止特殊符号无法正常显示
 " set ambiwidth=double 
-filetype plugin indent on
+" filetype plugin indent on
 " set showmatch
 " set shiftwidth=2
 " set tabstop=2
@@ -44,8 +44,8 @@ set autoread
 au CursorHold * checktime
 
 " 映射快捷键, 保存/退出
-nnoremap S :w<CR>
-nnoremap Q :q<CR>
+" nnoremap S :w<CR>
+" nnoremap Q :q<CR>
 
 "call plug#begin('~/.vim/plugged')
 """"""""""""""""""""""
@@ -98,15 +98,15 @@ if has('persistent_undo')
 endif
 
 " Colorscheme
-syntax enable
+" syntax enable
 set t_Co=256
 let g:rehash256 = 1
 let g:molokai_original = 1
 let g:solarized_termcolors=256
  " set background=dark
-set background=light
+" set background=light
 " colorscheme solarized
-colorscheme PaperColor
+" colorscheme PaperColor
 " colorscheme molokai
 
 

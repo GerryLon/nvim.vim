@@ -1,9 +1,15 @@
 -- global variable
 
 local set = vim.opt
-
+local map = vim.api.nvim_set_keymap
 
 -- global config
+vim.cmd [[
+  syntax enable
+  filetype plugin indent on
+]]
+
+
 vim.g.mapleader = ','
 
 set.number = true 
@@ -24,10 +30,11 @@ set.wildmenu = true
 set.fixeol = true
 -- set.colorcolumn = 120
 set.expandtab = true
+set.background = 'light'
 
 vim.g['python3_host_prog'] = '/usr/local/bin/python3'
 
-
+-- end of global config
 
 -- plugin
 local Plug = vim.fn['plug#']
@@ -69,3 +76,11 @@ Plug 'NLKNguyen/papercolor-theme'
 -- Plug 'github/copilot.vim'
 
 vim.call('plug#end')
+
+vim.cmd [[
+  colorscheme PaperColor
+]]
+
+-- key map
+map('n', 'S', ':w<CR>', {noremap=true})
+map('n', 'Q', ':q<CR>', {noremap=true})
