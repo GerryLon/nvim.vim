@@ -1,33 +1,34 @@
-set number
-set encoding=utf-8
+lua require('core')
+
+" set number
+" set encoding=utf-8
 " set keep-english-in-normal
 " set langmenu=zh_CN.UTF-8
 "防止特殊符号无法正常显示
 " set ambiwidth=double 
 filetype plugin indent on
-set showmatch
-set shiftwidth=2
-set tabstop=2
-set encoding=utf-8
-set hlsearch
-set autoindent
-set clipboard=unnamed
-set nocursorcolumn              " Do not highlight column (speeds up highlighting)
+" set showmatch
+" set shiftwidth=2
+" set tabstop=2
+" set hlsearch
+" set autoindent
+" set clipboard=unnamed
+" set nocursorcolumn              " Do not highlight column (speeds up highlighting)
 " set nocursorline
-set cursorline
+" set cursorline
 " set cursorcolumn
 " hi CursorLine term=bold ctermbg=yellow cterm=bold guibg=Grey40
 " hi CursorLine ctermbg=yellow guibg=Grey40
-set backspace=2
-set ignorecase
-set smartcase
-set wildmenu
-set fixeol
+" set backspace=2
+" set ignorecase
+" set smartcase
+" set wildmenu
+" set fixeol
 " set showcmd
 " set relativenumber
 " 超过120提示
-set colorcolumn=120
-set expandtab
+" set colorcolumn=120
+" set expandtab
 
 " 创建一个新的 MyTabSpace 组,并设置它的颜色
 highlight MyTabSpace guifg=darkgrey ctermfg=darkgrey
@@ -110,8 +111,7 @@ colorscheme PaperColor
 
 
 " Set leader shortcut to a comma ','. By default it's the backslash
-let mapleader = ','
-
+" let mapleader = ','
 
 " vim-go
 let g:go_fmt_command = 'gofmt'
@@ -228,7 +228,7 @@ nnoremap <leader>gb :<C-u>call gitblame#echo()<CR>
 
 source $HOME/.config/nvim/vim-airline.vim
 source $HOME/.config/nvim/vim-markdown-preview.vim
-source $HOME/.config/nvim/python.vim
+" source $HOME/.config/nvim/python.vim
 
 " windows size control
 nnoremap  <leader>5> <C-w>5>
@@ -262,4 +262,3 @@ highlight CocFloating ctermbg=LightYellow ctermfg=DarkGreen
 " hi CocFloating ctermfg=Blue ctermbg=Yellow
 "
 
-lua require('core')
