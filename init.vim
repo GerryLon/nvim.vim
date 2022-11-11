@@ -1,3 +1,6 @@
+
+set nofoldenable
+
 lua require('core')
 
 " set number
@@ -225,10 +228,6 @@ nnoremap <leader>a :cclose<CR>
 " for git blame
 nnoremap <leader>gb :<C-u>call gitblame#echo()<CR>
 
-
-source $HOME/.config/nvim/vim-airline.vim
-source $HOME/.config/nvim/vim-markdown-preview.vim
-" source $HOME/.config/nvim/python.vim
 
 " windows size control
 nnoremap  <leader>5> <C-w>5>
