@@ -163,8 +163,8 @@ nnoremap <silent> <leader>ag :Ag <CR>
 " noremap <C-a> :Ag<CR>
 " noremap <leader>a :Ag<CR>
 
-nnoremap <leader>v :NERDTreeFind<cr>
-nnoremap <leader>g :NERDTreeToggle<cr>
+" nnoremap <leader>v :NERDTreeFind<cr>
+" nnoremap <leader>g :NERDTreeToggle<cr>
 " nnoremap <C-f> :NERDTreeFind<CR>
 
 nnoremap <leader>t :TagbarToggle<cr>

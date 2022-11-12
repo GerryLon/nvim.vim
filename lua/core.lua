@@ -1,8 +1,6 @@
-require('plugins')
 -- global variable
 
 local set = vim.opt
-local map = vim.api.nvim_set_keymap
 
 -- global config
 vim.cmd [[
@@ -43,9 +41,8 @@ vim.g['python3_host_prog'] = '/usr/local/bin/python3'
 -- vim.opt.termguicolors = true
 
 -- end of global config
+--
 
-
--- key map
-map('n', 'S', ':w<CR>', {noremap=true})
-map('n', 'Q', ':q<CR>', {noremap=true})
+require('plugins')
+require('keymap')
 

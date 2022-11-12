@@ -12,7 +12,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'fatih/vim-go'
 Plug 'tpope/vim-surround'
 Plug 'mhinz/vim-startify'
-Plug 'scrooloose/nerdtree'
+-- Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-commentary'
 Plug ('neoclide/coc.nvim', {branch='release'})
 Plug 'dense-analysis/ale'
@@ -65,12 +65,16 @@ require('packer').startup({function(use)
   use 'wbthomason/packer.nvim'
 
   -- My plugins here
-   use {
-     "nvim-lualine/lualine.nvim",
-     requires = {"kyazdani42/nvim-web-devicons", opt = true},
-     config = function()
-     end,
-   }
+  use "kyazdani42/nvim-web-devicons"
+  use {
+    "nvim-lualine/lualine.nvim",
+    requires = {"kyazdani42/nvim-web-devicons", opt = true},
+    config = function() end,
+  }
+  use {
+    'kyazdani42/nvim-tree.lua',
+    requires = 'kyazdani42/nvim-web-devicons',
+  }
   -- use {
   --   'nvim-telescope/telescope.nvim', tag = '0.1.0',
   -- -- or                            , branch = '0.1.x',
@@ -137,10 +141,24 @@ config = {
 -- map('n', '<leader>fh', telescope_builtin.help_tags, {noremap=true})
 
 
--- config for lualine
 require('lualine').setup({
- options = { theme = 'dracula' },
- sections = {
-   lualine_x = {'encoding', {'fileformat', icons_enabled = false}, 'filetype'},
- }
+  options = { theme = 'dracula' },
+  sections = {
+    lualine_x = {'encoding', {'fileformat', icons_enabled = false}, 'filetype'},
+  }
 }) 
+
+require('nvim-tree').setup({
+  sort_by = "case_sensitive",
+  renderer = {
+    icons = {
+      show = {
+        folder = false,
+        git = false,
+        folder_arrow = false,
+      }
+    },
+  },
+})
+map('n', '<leader>g', ':NvimTreeToggle<CR>', {noremap=true})
+
