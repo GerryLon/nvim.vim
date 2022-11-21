@@ -35,7 +35,7 @@ Plug 'zivyangll/git-blame.vim'
 -- Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'buoto/gotests-vim'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'psliwka/vim-smoothie'
+-- Plug 'psliwka/vim-smoothie'
 -- Plug 'ybian/smartim'
 -- Plug 'github/copilot.vim'
 
