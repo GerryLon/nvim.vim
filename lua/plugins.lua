@@ -35,6 +35,7 @@ Plug 'zivyangll/git-blame.vim'
 -- Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
 Plug 'buoto/gotests-vim'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'psliwka/vim-smoothie'
 -- Plug 'ybian/smartim'
 -- Plug 'github/copilot.vim'
 
@@ -144,7 +145,7 @@ require('lualine').setup({
    lualine_c = {{
      'filename',
       file_status = true, -- displays file status (readonly status, modified status)
-      path = 3 -- 0 = just filename, 1 = relative path, 2 = absolute path
+      path = 1 -- 0 = just filename, 1 = relative path, 2 = absolute path
    }},
    lualine_x = {'encoding', {'fileformat', icons_enabled = false}, 'filetype'},
  },
