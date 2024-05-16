@@ -66,6 +66,7 @@ local packer_bootstrap = ensure_packer()
 
 require('packer').startup({function(use)
   use 'wbthomason/packer.nvim'
+  use 'sindrets/diffview.nvim'
 
   -- My plugins here
    use {
