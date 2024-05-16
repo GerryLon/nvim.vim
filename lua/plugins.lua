@@ -39,6 +39,8 @@ Plug 'NLKNguyen/papercolor-theme'
 -- Plug 'ybian/smartim'
 -- Plug 'github/copilot.vim'
 
+Plug 'sindrets/diffview.nvim'
+
 vim.call('plug#end')
 
 vim.cmd [[
