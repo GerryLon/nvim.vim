@@ -40,6 +40,7 @@ Plug 'NLKNguyen/papercolor-theme'
 -- Plug 'github/copilot.vim'
 
 Plug 'sindrets/diffview.nvim'
+Plug 'rust-lang/rust.vim'
 
 vim.call('plug#end')
 
