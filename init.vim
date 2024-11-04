@@ -46,47 +46,6 @@ autocmd FileType python,sh,proto,yaml setlocal list | set listchars=tab:>~,trail
 set autoread
 au CursorHold * checktime
 
-" 映射快捷键, 保存/退出
-" nnoremap S :w<CR>
-" nnoremap Q :q<CR>
-
-"call plug#begin('~/.vim/plugged')
-""""""""""""""""""""""
-""      Plugins      "
-""""""""""""""""""""""
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
-"Plug 'fatih/vim-go'
-"Plug 'tpope/vim-surround'
-"Plug 'mhinz/vim-startify'
-"Plug 'scrooloose/nerdtree'
-"Plug 'tpope/vim-commentary'
-"" Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'dense-analysis/ale'
-"Plug 'majutsushi/tagbar'
-"Plug 'easymotion/vim-easymotion'
-"Plug '/usr/local/opt/fzf'
-"Plug 'jiangmiao/auto-pairs'
-"Plug 'junegunn/gv.vim'
-"Plug 'junegunn/fzf.vim'
-"Plug 'SirVer/ultisnips'
-"Plug 'honza/vim-snippets'
-"Plug 'fatih/molokai'
-"Plug 'tpope/vim-fugitive'
-"Plug 'voldikss/vim-floaterm'
-"Plug 'airblade/vim-gitgutter'
-"Plug 'zivyangll/git-blame.vim'
-"" Plug 'mg979/vim-visual-multi'
-"" Plug 'gcmt/wildfire.vim'
-"" Plug 'altercation/vim-colors-solarized'
-"" Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install'  }
-"Plug 'buoto/gotests-vim'
-"Plug 'NLKNguyen/papercolor-theme'
-"" Plug 'ybian/smartim'
-"" Plug 'github/copilot.vim'
-"call plug#end()
-
 " Enable to copy to clipboard for operations like yank, delete, change and put
 " http://stackoverflow.com/questions/20186975/vim-mac-how-to-copy-to-clipboard-without-pbcopy
 if has('unnamedplus')

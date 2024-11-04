@@ -18,9 +18,13 @@ Plug ('neoclide/coc.nvim', {branch='release'})
 Plug 'dense-analysis/ale'
 Plug 'majutsushi/tagbar'
 Plug 'easymotion/vim-easymotion'
-Plug '/usr/local/opt/fzf'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/gv.vim'
+Plug('junegunn/fzf', {
+  ['do'] = function()
+    vim.call('fzf#install')
+  end
+})
 Plug 'junegunn/fzf.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
@@ -68,6 +72,7 @@ local packer_bootstrap = ensure_packer()
 require('packer').startup({function(use)
   use 'wbthomason/packer.nvim'
   use 'sindrets/diffview.nvim'
+  use 'rust-lang/rust.vim'
 
   -- My plugins here
    use {
