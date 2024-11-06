@@ -33,7 +33,9 @@ set.fixeol = true
 set.expandtab = true
 set.background = 'light'
 
-vim.g['python3_host_prog'] = '/usr/local/bin/python3'
+local python_install_path = vim.fn.exepath('python3');
+
+vim.g['python3_host_prog'] = python_install_path;
 
 -- from https://github.com/nvim-tree/nvim-tree.lua
 -- disable netrw at the very start of your init.lua (strongly advised)
