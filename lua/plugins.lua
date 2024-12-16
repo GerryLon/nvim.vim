@@ -45,6 +45,7 @@ Plug 'NLKNguyen/papercolor-theme'
 
 Plug 'sindrets/diffview.nvim'
 Plug 'rust-lang/rust.vim'
+-- Plug 'ludovicchabant/vim-gutentags'
 
 vim.call('plug#end')
 
